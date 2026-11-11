@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile | GUoABC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body class="flex min-h-screen flex-col bg-stone-100 text-slate-800">
+
+  <header class="bg-slate-900 px-6 py-5 text-white">
+    <div class="mx-auto flex max-w-4xl flex-col gap-4
+                md:flex-row md:items-center md:justify-between">
+      <h1 class="text-xl font-bold">Great University of ABC</h1>
+
+      <nav aria-label="Main navigation" class="flex gap-5 text-sm">
+        <a href="index.html" class="transition-colors hover:text-red-300">Home</a>
+        <a href="about.html" class="transition-colors hover:text-red-300">About</a>
+        <a href="contact.html" class="transition-colors hover:text-red-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto w-full max-w-4xl flex-1 px-6 py-12">
+    <p class="mb-2 text-sm font-semibold uppercase tracking-widest text-black-700">
+      Student Portal
+    </p>
+
+    <h2 class="mb-8 text-4xl font-bold">My Profile</h2>
+
+    <section class="rounded-xl bg-white p-6 shadow md:p-10">
+      <h3 class="mb-6 text-xl font-semibold">Personal Information</h3>
+
+      <dl class="grid gap-6 sm:grid-cols-2">
+        <div>
+          <dt class="text-sm text-slate-500">Full Name</dt>
+          <dd id="studentName" class="mt-1 break-words text-lg font-medium">
+            Not provided
+          </dd>
+        </div>
+
+        <div>
+          <dt class="text-sm text-slate-500">Email Address</dt>
+          <dd id="studentEmail" class="mt-1 break-words text-lg font-medium">
+            Not provided
+          </dd>
+        </div>
+
+        <div>
+          <dt class="text-sm text-slate-500">Degree Program</dt>
+          <dd class="mt-1 text-lg font-medium">BS Software Engineering</dd>
+        </div>
+      </dl>
+
+      <a href="about.html" class="mt-8 inline-block rounded-lg bg-black px-6 py-3
+          font-semibold text-white hover:text-red-700
+          hover:bg-slate-800 transition-colors duration-300">
+        Edit My Information
+      </a>
+    </section>
+  </main>
+
+  <footer class="border-t border-stone-300 p-5 text-center text-sm text-slate-500">
+    &copy; 2026 Great University of ABC. All rights reserved.
+  </footer>
+
+</body>
+
+</html>
